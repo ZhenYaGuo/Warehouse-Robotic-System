@@ -1,0 +1,8 @@
+prefix=/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/devel
+
+Name: goal_pub
+Description: Description of goal_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/devel/lib 
+Requires: 

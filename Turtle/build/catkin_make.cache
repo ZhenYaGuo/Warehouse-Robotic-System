@@ -1,0 +1,2 @@
+ar_local:ar_track_alvar:goal_pub:package_info_management
+-DCATKIN_DEVEL_PREFIX=/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/devel -DCMAKE_INSTALL_PREFIX=/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/install -G Unix Makefiles

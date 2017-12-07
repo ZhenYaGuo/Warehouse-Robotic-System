@@ -1,0 +1,8 @@
+prefix=/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/install
+
+Name: package_info_management
+Description: Description of package_info_management
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cc/cs199/fa13/class/cs199-bsi/ros_workspaces/turtle/install/lib 
+Requires: 
