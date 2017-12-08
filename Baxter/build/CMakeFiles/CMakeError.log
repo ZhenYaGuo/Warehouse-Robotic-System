@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec671407247/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec671407247.dir/build.make CMakeFiles/cmTryCompileExec671407247.dir/build
+make[1]: Entering directory `/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec671407247.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec671407247.dir/CheckSymbolExists.c.o   -c /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec671407247
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec671407247.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec671407247.dir/CheckSymbolExists.c.o  -o cmTryCompileExec671407247 -rdynamic 
+CMakeFiles/cmTryCompileExec671407247.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec671407247] Error 1
+make[1]: Leaving directory `/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec671407247/fast] Error 2
+
+File /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1449207261/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1449207261.dir/build.make CMakeFiles/cmTryCompileExec1449207261.dir/build
+make[1]: Entering directory `/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1449207261.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1449207261.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1449207261
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1449207261.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1449207261.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1449207261 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1449207261] Error 1
+make[1]: Leaving directory `/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1449207261/fast] Error 2
+
+

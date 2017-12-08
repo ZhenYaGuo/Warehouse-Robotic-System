@@ -1,0 +1,31 @@
+ln -s /scratch/shared/baxter_ws/baxter.sh ~/ros_workspaces/project
+
+for Baxter:
+(Enable)
+rosrun baxter_tools enable_robot.py -e
+(Trajectory Controller)
+rosrun baxter_interface joint_trajectory_action_server.py
+(Movelt)
+roslaunch baxter_moveit_config demo_baxter.launch
+
+
+for Sawyer:
+(Enable)
+rosrun intera_interface enable_robot.py -e
+(Trajectory Controller)
+rosrun intera_interface joint_trajectory_action_server.py
+(Movelt)
+roslaunch sawyer_moveit_config sawyer_moveit.launch electric_gripper:=true
+
+
+
+Camera tutorial:
+http://sdk.rethinkrobotics.com/intera/Camera_Image_Display_Example
+http://sdk.rethinkrobotics.com/wiki/Camera_Control_Tool
+
+camera_display.py location:
+/scratch/shared/baxter_ws/src/intera_sdk/intera_examples/scripts
+
+tf_echo message extraction
+
+https://drive.google.com/drive/folders/0B9xwSY0ELeKuLU9LempCZHVQYzg

@@ -1,0 +1,8 @@
+prefix=/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/devel
+
+Name: ric_moveit
+Description: Description of ric_moveit
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/install
+
+Name: komodo_arm_moveit_config
+Description: Description of komodo_arm_moveit_config
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/install/lib 
+Requires: 

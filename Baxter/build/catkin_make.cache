@@ -1,0 +1,2 @@
+ar_track_alvar:baxter_moving:moving:planning_baxter:ric/komodo_2dnav:ric/move_it/komodo_2_moveit_config:ric/move_it/komodo_arm_moveit_config:ric/ric:ric/ric_base_station:ric/ric_board:ric/ric_description:ric/ric_gazebo:ric/ric_mc:ric/ric_moveit:ric/ric_moveit_ik_plugin:ric/ric_navigation:ric/ric_robot
+-DCATKIN_DEVEL_PREFIX=/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/devel -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa17/class/ee106a-aax/ros_workspaces/project/install -G Unix Makefiles
